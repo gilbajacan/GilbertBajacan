@@ -1,0 +1,30 @@
+---
+title: "Practical Exam CS 101"
+author: "Gilbert Bajacan BSIT 2-B"
+date: "2023-11-15"
+output: pdf_document
+---
+
+```{r num 1}
+data("mtcars")
+```
+
+```{r num 2}
+#32 cars, 12 columns 
+#name of columns: mpg, cyl,  disp,  hp, drat, wt,  qsec, vs, am, gear, carb
+```
+
+```{using tibble}
+library(tibble)
+head(mtcars)
+mtcars <- rownames_to_column(mtcars,var = "models")
+head(mtcars)
+```
+
+
+```{r num 3}
+summary(mtcars)
+```
+
+```{num 4}
+```
